@@ -50,3 +50,15 @@
     display: flex;
     justify-content: center;
 }
+@media (max-width: 550px) {
+    .filter-button-container {
+        flex-direction: column;
+        margin: 10px;
+    }
+    .filterItem {
+        flex-direction: column;
+        label {
+            align-self: flex-start;
+        }
+    }
+}

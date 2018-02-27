@@ -7,14 +7,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 
 
     h1 {
         color: $black;
+        padding: 0 10px;
     }
 
     h3 {
         color: $black;
+        padding: 0 10px;
     }
 
     button {
