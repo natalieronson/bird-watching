@@ -1,4 +1,24 @@
-.bird-entry-container {
-    border: 1px solid black;
-    margin: 10px;
+$accent: #1f2a66;
+$black: #302d2d;
+$blue: #D7ECEB;
+
+@import 'partials/loginPage';
+@import 'partials/normalize';
+@import 'partials/birdContainer';
+@import 'partials/newEntry';
+@import 'partials/filterForm';
+@import 'partials/nav';
+
+
+body {
+    font-family: 'Mukta Mahee', sans-serif;
+    background: $blue;
+    color: $black;
+}
+
+
+
+.main-container {
+    display: flex;
+    flex-direction: column;
 }

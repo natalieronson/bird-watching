@@ -1,0 +1,22 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: $black;
+    height: 10vh;
+    width: 100%;
+    button {
+        border: none;
+        border-left: 1px solid white;
+        width: 150px;
+        background: none;
+        color: white;
+        padding: 10px;
+        &:not(:first-of-type) {
+            border-right: 1px solid white;
+        }
+    }
+}
+
+.toggle-button-container {
+    display: flex;
+}

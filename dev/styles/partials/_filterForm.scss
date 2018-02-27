@@ -1,0 +1,52 @@
+.filterForm {
+    display: flex;
+    flex-direction: column;
+    // height: 70vh;
+}
+
+.filterFormContainer {
+    color: $black;
+    display: flex;
+    z-index: 100;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    // height: 70vh;
+    input {
+        width: 300px;
+        margin: 10px 0;
+        padding: 5px;
+        border: 1px solid $accent;
+        border-radius: 2px;
+    }
+    button, .filter-button {
+        border: 2px solid $accent;
+        color: $accent;
+        // height: 30px;
+        width: 150px;
+        background: white;
+        align-self: center;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 2px;
+    }
+    // flex-wrap: wrap;
+    // position: absolute;
+    // top: 100px;
+    // left: 0;
+}
+
+.filterItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    label {
+        margin-right: 10px;
+    }
+    // flex-direction: column;
+}
+
+.filter-button-container {
+    display: flex;
+    justify-content: center;
+}
