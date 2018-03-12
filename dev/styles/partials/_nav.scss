@@ -11,6 +11,9 @@ nav {
         background: none;
         color: white;
         padding: 10px;
+        &:focus {
+            color: $blue
+        }
         &:not(:first-of-type) {
             border-right: 1px solid white;
         }
@@ -35,5 +38,11 @@ nav {
     }
     .toggle-button-container {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 650px) {
+    .sighting-title img {
+        display: none;
     }
 }

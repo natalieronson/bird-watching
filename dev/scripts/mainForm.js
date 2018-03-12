@@ -1,5 +1,8 @@
 import React from 'react';
 
+/**
+ * Form that accepts input to add a new sighting
+ */
 export default function (props) {
     return (
         <div className="newBirdContainer">
@@ -13,9 +16,16 @@ export default function (props) {
                 <label htmlFor="date">Date</label>
                 <input type="date" value={props.data.date} id="date" onChange={props.handleChange} />
                 <label htmlFor="image"></label>
-                {/* <input type="file" id="image" /> */}
                 <label htmlFor="notes">Notes</label>
                 <textarea value={props.data.notes} id="notes" onChange={props.handleChange}></textarea>
+                <label htmlFor="file" className="fileLabel">
+                {props.data.file ?
+                <span>{props.data.file}</span>
+                :
+                <span>Select file</span>
+                }
+                </label>
+                <input type="file" id="file" onChange={props.handleChange}/>
                 <input type="submit" value="Submit" />
             </form>
         </div>

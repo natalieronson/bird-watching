@@ -1,7 +1,6 @@
 .filterForm {
     display: flex;
     flex-direction: column;
-    // height: 70vh;
 }
 
 .filterFormContainer {
@@ -11,7 +10,6 @@
     max-width: 100%;
     flex-direction: column;
     align-items: center;
-    // height: 70vh;
     input {
         width: 300px;
         margin: 10px 0;
@@ -30,10 +28,6 @@
         padding: 10px;
         border-radius: 2px;
     }
-    // flex-wrap: wrap;
-    // position: absolute;
-    // top: 100px;
-    // left: 0;
 }
 
 .filterItem {
@@ -43,7 +37,6 @@
     label {
         margin-right: 10px;
     }
-    // flex-direction: column;
 }
 
 .filter-button-container {

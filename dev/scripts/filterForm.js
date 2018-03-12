@@ -1,5 +1,8 @@
 import React from 'react';
 
+/**
+ * Form that accepts input the user can filter by
+ */
 export default function (props) {
     return (
         <div className="filterFormContainer">

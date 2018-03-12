@@ -14,11 +14,21 @@ body {
     font-family: 'Mukta Mahee', sans-serif;
     background: $blue;
     color: $black;
+    position: relative;
+    min-height: 100vh;
 }
-
-
 
 .main-container {
     display: flex;
     flex-direction: column;
+}
+
+footer {
+    font-size: 14px;
+    margin-top: 100px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
 }

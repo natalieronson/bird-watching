@@ -2,29 +2,50 @@
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    margin-bottom: 50px;
+}
 
+.main-bird-container {
+    margin-bottom: 50px;
 }
 
 .bird-entry-container, .newBirdContainer {
+    display: flex;
+    flex-direction: column;
     box-shadow: 1px 1px 3px $black;
-    background: url('../../lined_paper.png');
+    background: url('../../images/lined_paper.png');
     width: 70%;
     margin: 20px 0;
     padding: 20px;
-    min-height: 60vh;
-    max-height: 70vh;
     font-family: 'Indie Flower', cursive;
     position: relative;
+    overflow-y: scroll;
     .delete-entry {
         position: absolute;
-        bottom: 5px;
+        top: 5px;
+        right: 5px;
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 
 .sighting-title {
     font-family: 'Indie Flower', cursive;
-    margin: 40px 0 20px 0;
+    margin: 40px 0 0 0;
     text-decoration: underline;
     font-size: 50px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 0 40px;
+}
+
+
+.bird-entry-container img {
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.568);
 }
