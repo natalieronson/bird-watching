@@ -28,7 +28,7 @@ export default function(props) {
             : null
             }
             {props.data.file ?
-            <img src={props.data.file} alt=""/>:
+            <img src={props.data.file} alt="Image uploaded by the user"/>:
             null
             }
             <p className="delete-entry" onClick={() => props.deleteEntry(props.data.id)}>Delete</p>

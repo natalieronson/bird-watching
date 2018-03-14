@@ -39,6 +39,17 @@
     display: flex;
     justify-content: center;
     padding: 0 40px;
+    img {
+        height: 100px;
+        width: 100px;
+        margin-top: 15px;
+    }
+    img:first-of-type {
+        margin-right: 20px;
+        margin-top: 20px;
+        height: 90px;
+        width: 90px;
+    }
 }
 
 

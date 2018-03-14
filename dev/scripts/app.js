@@ -344,9 +344,9 @@ class App extends React.Component {
                     )
                   })}
                   <div className="sighting-title">
-                    <img src="images/birdtwo.svg" alt=""/>
+                    <img src="images/left-bird.svg" alt="Icon of a flying bird"/>
                     <h2>Sightings</h2>
-                    <img src="images/bird.svg" alt=""/>
+                    <img src="images/bird.svg" alt="Icon of a flying bird"/>
                   </div>
                 </div>
                 :null
@@ -355,12 +355,15 @@ class App extends React.Component {
             : <div className="login-wrapper">
                 <div className="login-page">
                   <h1>Your bird watching journal</h1>
-                  <h3>Record birds you see and tracks your stats</h3>
+                  <h3>Track your bird sightings!</h3>
                   <button onClick={this.googleAuthentication}>Sign in</button>
                 </div>
               </div>
           }
+          {this.state.loggedIn ?
           <footer><p>Icons by Iconic from the Noun Project</p></footer>
+          :null
+          }
         </div>
       )
     }
